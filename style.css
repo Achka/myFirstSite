@@ -1,0 +1,159 @@
+#MainBox{
+	margin: auto;
+}
+.image{
+	border: 2px #FFFF00 solid; 
+}
+.button
+{
+	padding-top:20px;
+	background-color: #000080;
+	border: 1px #FFFF00 solid; 
+	width: 110px;
+	height: 40px;
+	text-align: center;
+	text-decoration: none;
+	font :20pt;
+}
+.button:hover{
+	padding-top:20px;
+	background-color: #9933FF;
+	border: 1px #FFFF00 solid; 
+	width: 110px;
+	height: 40px;
+	text-align: center;
+	text-decoration: none;
+	font :20pt;
+}
+header{
+	background-size: cover;
+	text-align: center;
+	color: yellow;
+	font: 30pt "Monotype Corsiva";
+}
+nav{
+	font-family:arial;
+	font-size:20px;
+	float: left;
+	padding: 2px;
+	background-color: #FFFF00;
+	margin-right:20px;
+	margin-left: 20px;
+	position: fixed;
+}
+a{
+	color : yellow;
+}
+body{
+	background-image: url(images/Disney.jpg); 
+	background-size: 100%;
+    background-attachment: fixed;
+}
+main{
+	text-align: center; 
+	margin: 2px;
+	margin-left: 150px;
+	font: 25pt "Monotype Corsiva";
+	color: yellow;
+	width: 90%;
+	text-shadow: 2px 2px #ff0000;
+}
+ol {
+	/*margin-left: 150px;*/
+	text-align: left;
+}
+footer
+{
+	height: 15px;
+	margin: 5px;
+	padding: 20px;
+	text-align: center;
+	width:90%;
+	color : #FF0000;
+	text-shadow: 1px 1px #ffffff;
+	font-size:20px;
+}
+.Top10{
+	font-size: 20px;
+	color: #FFF999;
+}
+ .modal-image{
+	 cursor: pointer;
+ }
+
+ .myModal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    /*background-color: rgb(0,0,0); */
+    background-color: rgba(0,0,0,0.9);
+}
+
+/* Modal Content (Image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+	max-height: 700px;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+.caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, .caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
